@@ -1,0 +1,33 @@
+drugRulebase
+
+Rule 1 If the heart_rate is normal and the respiration_rate is normal then the drug will be moderate
+Rule 2 If the heart_rate is low and the respiration_rate is normal then the drug will be moderate
+Rule 3 If the heart_rate is low and the respiration_rate is low then the drug will be small
+Rule 4 If the heart_rate is very_low and the respiration_rate is low then the drug will be very_small
+Rule 5 If the heart_rate is high and the respiration_rate is high then the drug will be large
+Rule 6 If the heart_rate is very_high and the respiration_rate is high then the drug will be very_large
+
+heart_rate
+
+very_low 40 40 0 20 
+low 60 60 20 10
+normal 70 90 10 10
+high 100 100 10 20
+very_high 120 120 20 0
+
+respiration_rate
+
+low 0 3 0 3
+normal 6 8 3 2
+high 10 12 2 0
+
+drug
+
+very_small 0 0 0 2
+small 2 2 2 2
+moderate 4 4 2 2
+large 6 6 2 2
+very_large 10 10 2 2
+
+heart_rate = 55
+respiration_rate = 4

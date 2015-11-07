@@ -1,0 +1,27 @@
+currentChangeRulebase
+
+Rule 1 If temperature is high or current is high then change_in_current will be reduce
+Rule 2 If temperature is low and current is high then change_in_current will be no_change
+Rule 3 If temperature is medium then change_in_current will be no_change
+Rule 4 If temperature is low and current is low then change_in_current will be increase
+
+current
+
+low 0 0 0 10
+medium 10 10 10 10
+high 20 20 10 0
+
+temperature
+
+low 0 100 0 100
+medium 200 200 150 150
+high 400 450 150 0
+
+change_in_current
+
+reduce -50 -50 50 50
+no_change 0 0 50 50
+increase 50 50 50 50
+
+current = 17
+temperature = 300
